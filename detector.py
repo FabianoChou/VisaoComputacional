@@ -27,7 +27,7 @@ while True:
         frame_anotado = resultado.plot()
         #Vai identificar os itens e dar nomes para as caixas
         classes_ids = resultado.boxes.cls.tolist()
-        nomes = resultados.names
+        nomes = resultado.names
         for cls_id in classes_ids:
             itens_frame.append(nomes[int(cls_id)])
     contagem = Counter(itens_frame)
